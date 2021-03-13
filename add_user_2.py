@@ -1,6 +1,8 @@
 from db import db_session
-from models_2 import User 
+from db.models_2 import User
 
-user = User(direction='Программирование')
+
+user = User(direction='П')
 db_session.add(user)
 db_session.commit()
+

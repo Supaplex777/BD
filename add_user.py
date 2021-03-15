@@ -1,6 +1,12 @@
 from db import db_session # добавление записи в базу данных Основная
-from models import Main 
+from models import Main
 
-first=Main(direction=1, course_name='Профессия Веб-разработчик', school_name=1, the_cost=147500, appraisal= 4.4,link='https://skillbox.ru/course/profession-webdev/?utm_source=advcake&utm_medium=cpa&utm_campaign=affiliate&utm_content=exkentbkru&utm_term=b5f8e8688d44facf7038ddd31729feff&advcake_params=b5f8e8688d44facf7038ddd31729feff&sub1=baza')
-db_session.add(first)
+first=Main(direction=3, course_name='Курс Веб-аналитика', school_name=1, the_cost=35000, appraisal= 4.1,link='https://imba.ru/course/web-analytics?utm_medium=referral&utm_source=tutortop.ru&utm_campaign=partner')
+
+#second=direct(direction='Аналитика')
+#three=The_skill(skill='Машинное обучение')
+#four=The_Scholl(scholl='Convert Monster')
+#five = The_difinition_of_skill(course_name=1,skill=2) - Не работает 
+
+db_session.add(five)
 db_session.commit()
